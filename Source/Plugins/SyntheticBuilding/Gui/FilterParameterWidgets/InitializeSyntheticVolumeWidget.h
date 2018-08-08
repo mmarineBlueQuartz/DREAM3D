@@ -48,6 +48,8 @@
 
 #include "SyntheticBuilding/ui_InitializeSyntheticVolumeWidget.h"
 
+SIMPL_CLASS_DECL(DataContainer)
+
 class QComboBox;
 class InitializeSyntheticVolume;
 
@@ -159,7 +161,7 @@ class InitializeSyntheticVolumeWidget : public FilterParameterWidget, private Ui
     bool                             m_DidCausePreflight;
     bool                             m_NewFileLoaded;
 
-    DataContainer::Pointer      m_DataContainer;
+    DataContainerShPtr      m_DataContainer;
     QList<QLabel*>                    m_ShapeTypeLabels;
     QList<QComboBox*>                 m_ShapeTypeCombos;
 

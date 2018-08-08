@@ -5,6 +5,7 @@
 #pragma once
 
 #include "SIMPLib/Common/SIMPLibSetGetMacros.h"
+#include "SIMPLib/DataContainers/DataContainerArray.h"
 #include "SIMPLib/FilterParameters/DynamicTableData.h"
 #include "SIMPLib/FilterParameters/FloatVec2FilterParameter.h"
 #include "SIMPLib/FilterParameters/FloatVec3FilterParameter.h"

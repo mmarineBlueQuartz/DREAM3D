@@ -52,6 +52,7 @@
 #include "SIMPLib/Common/ShapeType.h"
 #include "SIMPLib/CoreFilters/DataContainerReader.h"
 #include "SIMPLib/DataArrays/StatsDataArray.h"
+#include "SIMPLib/DataContainers/DataContainerArray.h"
 #include "SIMPLib/Filtering/FilterManager.h"
 #include "SIMPLib/Geometry/ImageGeom.h"
 #include "SIMPLib/Math/SIMPLibMath.h"
