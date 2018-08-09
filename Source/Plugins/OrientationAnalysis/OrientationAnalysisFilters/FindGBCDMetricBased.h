@@ -49,6 +49,7 @@
 #include "EbsdLib/EbsdConstants.h"
 
 #include "SIMPLib/Common/SIMPLibSetGetMacros.h"
+#include "SIMPLib/DataContainers/DataContainerArray.h"
 #include "SIMPLib/FilterParameters/AxisAngleInput.h"
 #include "SIMPLib/Filtering/AbstractFilter.h"
 #include "SIMPLib/SIMPLib.h"

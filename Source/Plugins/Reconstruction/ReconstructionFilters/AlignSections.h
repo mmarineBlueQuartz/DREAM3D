@@ -35,6 +35,10 @@
 
 #pragma once
 
+#if defined (_MSC_VER)
+#define NOMINMAX
+#endif
+
 #include "SIMPLib/Common/SIMPLibSetGetMacros.h"
 #include "SIMPLib/Filtering/AbstractFilter.h"
 #include "SIMPLib/SIMPLib.h"
