@@ -1,17 +1,18 @@
 parameters:
-  cmake-path: 'cmake'
-  ctest-path: 'ctest'
+  CMAKE_PATH: 'cmake'
+  CTEST_PATH: 'ctest'
   DREAM3D_SDK: ''
 
 steps:
 - script: |
-    $(cmake-path) -G Ninja -DDREAM3D_SDK=$(DREAM3D_SDK) -DCMAKE_BUILD_TYPE=Release $(Build.Repository.LocalPath)
+    echo CMake Path: $(CMAKE_PATH)
+    $(CMAKE_PATH) -G Ninja -DDREAM3D_SDK=$(DREAM3D_SDK) -DCMAKE_BUILD_TYPE=Release $(Build.Repository.LocalPath)
   displayName: 'CMake: configure'
 # - script: |
 #     cd $(Build.BinariesDirectory)
-#     $(cmake-path) --build .
+#     $(CMAKE_PATH) --build .
 #   displayName: 'Build DREAM3D....'
 - script: |
     cd $(Build.BinariesDirectory)
-    $(ctest-path) -D Experimental
+    $(CTEST_PATH) -D Experimental
   displayName: 'CMake: ctest'
