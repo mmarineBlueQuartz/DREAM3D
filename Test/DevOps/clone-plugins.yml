@@ -1,0 +1,19 @@
+steps:
+- script: |
+    cd ExternalProjects
+    mkdir Plugins
+    cd Plugins
+  displayName: 'Create Plugins directory'
+- script: |
+    git clone https://github.com/bluequartzsoftware/ITKImageProcessing.git
+    git clone https://github.com/bluequartzsoftware/SimulationIO.git
+    git clone https://github.com/bluequartzsoftware/ZeissImport.git
+    git clone https://github.com/DREAM3D/Anisotropy.git
+    git clone https://github.com/DREAM3D/DDDAnalysisToolbox.git
+    git clone https://github.com/DREAM3D/DREAM3DReview.git
+    git clone https://github.com/DREAM3D/HEDMAnalysis.git
+    git clone https://github.com/DREAM3D/ImageProcessing.git
+    git clone https://github.com/DREAM3D/MASSIFUtilities.git
+    git clone https://github.com/DREAM3D/TransformationPhase.git
+    git clone https://github.com/DREAM3D/UCSBUtilities.git
+  displayName: 'Clone Plugins'
