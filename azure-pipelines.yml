@@ -16,7 +16,7 @@ pool:
   name: BlueQuartz Self Hosted - Windows
 
 steps:
-- step: |
+- script: |
     git submodule init
     git submodule update
   displayName: Git submodules
