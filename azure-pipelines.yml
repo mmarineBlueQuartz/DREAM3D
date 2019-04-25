@@ -16,6 +16,10 @@ pool:
   name: BlueQuartz Self Hosted - Windows
 
 steps:
+- step: |
+    git submodule init
+    git submodule update
+  displayName: Git submodules
 - template: Test/DevOps/clone-plugins.yml
 - template: Test/DevOps/run-cmake.yml
   parameters:
