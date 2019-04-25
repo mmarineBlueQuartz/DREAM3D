@@ -3,6 +3,11 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
+variables:
+  DREAM3D_SDK: 'C:\DREAM3D_SDK'
+  CMAKE_PATH: 'C:\DREAM3D_SDK\cmake-3.13.3-win64-x64\bin\cmake.exe'
+  CTEST_PATH: 'C:\DREAM3D_SDK\cmake-3.13.3-win64-x64\bin\ctest.exe'
+
 trigger:
 - submodules/Visualization
 
@@ -12,3 +17,7 @@ pool:
 steps:
 - template: Test/DevOps/clone-plugins.yml
 - template: Test/DevOps/run-cmake.yml
+  parameters:
+    cmake: $(CMAKE_PATH)
+    ctest: $(CTEST_PATH)
+    DREAM3D_SDK: $(DREAM3D_SDK)
