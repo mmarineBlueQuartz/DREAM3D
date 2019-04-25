@@ -1,15 +1,15 @@
 [submodule "CMP"]
 	path = ExternalProjects/CMP
-	url = https://github.com/mmarineBlueQuartz/CMP.git
+	url=../CMP.git
 [submodule "SIMPL"]
 	path = ExternalProjects/SIMPL
-	url = https://github.com/mmarineBlueQuartz/SIMPL.git
+	url=../SIMPL.git
 	branch = feature/RedesignVisualization
 [submodule "SIMPLView"]
 	path = ExternalProjects/SIMPLView
-	url = https://github.com/mmarineBlueQuartz/SIMPLView.git
+	url=../SIMPLView.git
 	branch = feature/RedesignVisualization
 [submodule "SIMPLVtkLib"]
 	path = ExternalProjects/SIMPLVtkLib
-	url = https://github.com/mmarineBlueQuartz/SIMPLVtkLib.git
+	url=../SIMPLVtkLib.git
 	branch = feature/MultipleSelection
