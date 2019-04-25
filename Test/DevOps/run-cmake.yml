@@ -7,7 +7,7 @@ parameters:
 steps:
 - script: |
     echo ${{ parameters.cmake }}
-    ${{ parameters.cmake }} -G "Visual Studio 15 2017" -A Win64 -DDREAM3D_SDK=${{ parameters.DREAM3D_SDK }} -DCMAKE_BUILD_TYPE=Release $(Build.Repository.LocalPath)
+    ${{ parameters.cmake }} -G "${{ parameters.generator }}" -DDREAM3D_SDK=${{ parameters.DREAM3D_SDK }} -DCMAKE_BUILD_TYPE=Release $(Build.Repository.LocalPath)
   displayName: 'CMake: configure'
 # - script: |
 #     cd $(Build.BinariesDirectory)
