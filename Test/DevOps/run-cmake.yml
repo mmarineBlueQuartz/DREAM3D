@@ -1,14 +1,13 @@
 parameters:
   cmake: 'cmake'
   ctest: 'ctest'
-  DREAM3D_SDK: ''
   generator: ''
 
 steps:
 - script: |
     cd $(Build.BinariesDirectory)
     # rm CMakeCache.txt
-    ${{ parameters.cmake }} -G "${{ parameters.generator }}" -DDREAM3D_SDK=${{ parameters.DREAM3D_SDK }} -DCMAKE_BUILD_TYPE=Release $(Build.Repository.LocalPath)
+    ${{ parameters.cmake }} -G "${{ parameters.generator }}" -DDREAM3D_SDK=$(Agent.BuildDirectory) -DCMAKE_BUILD_TYPE=Release $(Build.Repository.LocalPath)
   displayName: 'CMake: configure'
 # - script: |
 #     cd $(Build.BinariesDirectory)
