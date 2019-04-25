@@ -6,7 +6,8 @@ parameters:
 
 steps:
 - script: |
-    echo ${{ parameters.cmake }}
+    cd $(Build.BinariesDirectory)
+    rm CMakeCache.txt
     ${{ parameters.cmake }} -G "${{ parameters.generator }}" -DDREAM3D_SDK=${{ parameters.DREAM3D_SDK }} -DCMAKE_BUILD_TYPE=Release $(Build.Repository.LocalPath)
   displayName: 'CMake: configure'
 # - script: |

@@ -5,6 +5,7 @@ steps:
     cd Plugins
   displayName: 'Create Plugins directory'
 - script: |
+    echo %cd%
     git clone https://github.com/bluequartzsoftware/ITKImageProcessing.git
     git clone https://github.com/bluequartzsoftware/SimulationIO.git
     git clone https://github.com/bluequartzsoftware/ZeissImport.git
