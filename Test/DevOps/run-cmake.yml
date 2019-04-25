@@ -2,11 +2,12 @@ parameters:
   CMAKE_PATH: 'cmake'
   CTEST_PATH: 'ctest'
   DREAM3D_SDK: ''
+  GENERATOR: ''
 
 steps:
 - script: |
-    echo CMake Path: $(CMAKE_PATH)
-    $(CMAKE_PATH) -G Ninja -DDREAM3D_SDK=$(DREAM3D_SDK) -DCMAKE_BUILD_TYPE=Release $(Build.Repository.LocalPath)
+    echo '$(CMAKE_PATH)'
+    $(CMAKE_PATH) -G "Visual Studio 15 2017" -A Win64 -DDREAM3D_SDK=$(DREAM3D_SDK) -DCMAKE_BUILD_TYPE=Release $(Build.Repository.LocalPath)
   displayName: 'CMake: configure'
 # - script: |
 #     cd $(Build.BinariesDirectory)
