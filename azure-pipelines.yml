@@ -22,4 +22,4 @@ steps:
     cmake: $(CMAKE_PATH)
     ctest: $(CTEST_PATH)
     DREAM3D_SDK: $(DREAM3D_SDK)
-    generator: ${CMAKE_GENERATOR}
+    generator: $(CMAKE_GENERATOR)
