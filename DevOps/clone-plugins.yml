@@ -4,36 +4,14 @@ steps:
     mkdir Plugins
     cd Plugins
 - checkout https://github.com/bluequartzsoftware/ITKImageProcessing.git
-  clean: false
-  lfs: true
 - checkout https://github.com/bluequartzsoftware/SimulationIO.git
-  clean: false
-  lfs: true
 - checkout https://github.com/bluequartzsoftware/ZeissImport.git
-  clean: false
-  lfs: true
 - checkout https://github.com/DREAM3D/Anisotropy.git
-  clean: false
-  lfs: true
 - checkout https://github.com/DREAM3D/DDDAnalysisToolbox.git
-  clean: false
-  lfs: true
 - checkout https://github.com/DREAM3D/DREAM3DReview.git
-  clean: false
-  lfs: true
 - checkout https://github.com/DREAM3D/HEDMAnalysis.git
-  clean: false
-  lfs: true
 - checkout https://github.com/DREAM3D/ImageProcessing.git
-  clean: false
-  lfs: true
 - checkout https://github.com/DREAM3D/MASSIFUtilities.git
-  clean: false
-  lfs: true
 - checkout https://github.com/DREAM3D/TransformationPhase.git
-  clean: false
-  lfs: true
 - checkout https://github.com/DREAM3D/UCSBUtilities.git
-  clean: false
-  lfs: true
   displayName: 'Clone Plugins'
