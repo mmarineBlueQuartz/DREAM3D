@@ -6,7 +6,7 @@ parameters:
 steps:
 - script: |
     cd $(Build.BinariesDirectory)
-    ${{ parameters.cmake }} -G "${{ parameters.generator }}" -DDREAM3D_SDK=$(Agent.BuildDirectory) -DCMAKE_BUILD_TYPE=Release $(Build.Repository.LocalPath)
+    ${{ parameters.cmake }} -G "${{ parameters.generator }}" -DDREAM3D_SDK=$(Agent.BuildDirectory) -DCMAKE_BUILD_TYPE=Release $(Build.Repository.LocalPath) -DSIMPL_USE_MKDOCS=false -DSIMPLView_BUILD_DOCUMENTATION=false
   displayName: 'CMake: configure'
 # - script: |
 #     cd $(Build.BinariesDirectory)
