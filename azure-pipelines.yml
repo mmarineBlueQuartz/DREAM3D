@@ -25,3 +25,4 @@ steps:
     cmake: $(CMAKE_PATH)
     ctest: $(CTEST_PATH)
     generator: $(CMAKE_GENERATOR)
+- template: DevOps/clean-plugins.yml

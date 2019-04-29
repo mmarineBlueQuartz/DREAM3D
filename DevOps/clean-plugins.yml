@@ -1,0 +1,5 @@
+steps:
+- script: |
+    cd ExternalProjects
+    rd /s /q Plugins
+  displayName: 'Clean Plugins'

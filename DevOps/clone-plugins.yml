@@ -3,15 +3,15 @@ steps:
     cd ExternalProjects
     mkdir Plugins
     cd Plugins
-- checkout https://github.com/bluequartzsoftware/ITKImageProcessing.git
-- checkout https://github.com/bluequartzsoftware/SimulationIO.git
-- checkout https://github.com/bluequartzsoftware/ZeissImport.git
-- checkout https://github.com/DREAM3D/Anisotropy.git
-- checkout https://github.com/DREAM3D/DDDAnalysisToolbox.git
-- checkout https://github.com/DREAM3D/DREAM3DReview.git
-- checkout https://github.com/DREAM3D/HEDMAnalysis.git
-- checkout https://github.com/DREAM3D/ImageProcessing.git
-- checkout https://github.com/DREAM3D/MASSIFUtilities.git
-- checkout https://github.com/DREAM3D/TransformationPhase.git
-- checkout https://github.com/DREAM3D/UCSBUtilities.git
+    git clone https://github.com/bluequartzsoftware/ITKImageProcessing.git
+    git clone https://github.com/bluequartzsoftware/SimulationIO.git
+    git clone https://github.com/bluequartzsoftware/ZeissImport.git
+    git clone https://github.com/DREAM3D/Anisotropy.git
+    git clone https://github.com/DREAM3D/DDDAnalysisToolbox.git
+    git clone https://github.com/DREAM3D/DREAM3DReview.git
+    git clone https://github.com/DREAM3D/HEDMAnalysis.git
+    git clone https://github.com/DREAM3D/ImageProcessing.git
+    git clone https://github.com/DREAM3D/MASSIFUtilities.git
+    git clone https://github.com/DREAM3D/TransformationPhase.git
+    git clone https://github.com/DREAM3D/UCSBUtilities.git
   displayName: 'Clone Plugins'
