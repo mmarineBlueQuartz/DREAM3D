@@ -3,3 +3,4 @@ steps:
     cd ExternalProjects
     rd /s /q Plugins
   displayName: 'Clean Plugins'
+  condition: always()
