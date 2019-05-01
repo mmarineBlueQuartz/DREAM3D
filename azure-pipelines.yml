@@ -19,7 +19,6 @@ steps:
     git submodule init
     git submodule update
   displayName: Git submodules
-#- template: DevOps/clean-plugins.yml
 - template: DevOps/clone-plugins.yml
 - template: DevOps/run-cmake.yml
   parameters:
