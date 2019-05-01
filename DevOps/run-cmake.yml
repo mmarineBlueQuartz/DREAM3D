@@ -8,10 +8,10 @@ steps:
     cd $(Build.BinariesDirectory)
     ${{ parameters.cmake }} -G "${{ parameters.generator }}" -DDREAM3D_SDK=$(Agent.BuildDirectory) -DCMAKE_BUILD_TYPE=Release $(Build.Repository.LocalPath) -DSIMPL_USE_MKDOCS=false -DSIMPLView_BUILD_DOCUMENTATION=false
   displayName: 'CMake: configure'
-# - script: |
-#     cd $(Build.BinariesDirectory)
-#     $(cmake) --build .
-#   displayName: 'Build DREAM3D....'
+- script: |
+    cd $(Build.BinariesDirectory)
+    ${{ parameters.cmake }} --build .
+  displayName: 'Build DREAM3D....'
 - script: |
     cd $(Build.BinariesDirectory)
     ${{ parameters.ctest }} -D Experimental
